@@ -54,6 +54,18 @@ namespace Verifica_Vincenzi
 
 
             numeroDeiLibri++;
+            TextBoxNDeiLibri.Content = numeroDeiLibri;
+
+
+
+            string nome = "giovanni";
+            string indirizzo = "via garibaldi";
+            string orariApertura = "7:00";
+            string orariChiusura = "18:00";
+
+            bilbioteca.datiUtente(nome, indirizzo, orariApertura, orariChiusura);
+
+
 
 
 
