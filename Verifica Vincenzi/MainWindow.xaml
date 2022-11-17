@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Label x:Name="TextBoxNDeiLibri" Content="numero dei libri" HorizontalAlignment="Left" Height="39" Margin="26,347,0,0" VerticalAlignment="Top" Width="111"/>
+        <Button x:Name="bottone1" Content="aggiungi libro" HorizontalAlignment="Left" Height="52" Margin="480,60,0,0" VerticalAlignment="Top" Width="101" Click="bottone1_Click"/>
+        <TextBox x:Name="TextBoxAutore" HorizontalAlignment="Left" Height="35" Margin="10,60,0,0" TextWrapping="Wrap" Text="autore" VerticalAlignment="Top" Width="63"/>
+        <TextBox x:Name="TextBoxTitolo" HorizontalAlignment="Left" Height="35" Margin="94,60,0,0" TextWrapping="Wrap" Text="titolo" VerticalAlignment="Top" Width="64"/>
+        <TextBox x:Name="TextBoxAnno" HorizontalAlignment="Left" Height="35" Margin="181,60,0,0" TextWrapping="Wrap" Text="anno" VerticalAlignment="Top" Width="66"/>
+        <TextBox x:Name="TextBoxEditore" HorizontalAlignment="Left" Height="35" Margin="267,60,0,0" TextWrapping="Wrap" Text="editore" VerticalAlignment="Top" Width="63"/>
+        <TextBox x:Name="TextBoxNPag" HorizontalAlignment="Left" Height="35" Margin="359,60,0,0" TextWrapping="Wrap" Text="numero pag" VerticalAlignment="Top" Width="57"/>
+        <TextBox x:Name="TextBoxCercaTitolo" HorizontalAlignment="Left" Height="32" Margin="10,166,0,0" TextWrapping="Wrap" Text="ricerca titolo" VerticalAlignment="Top" Width="63"/>
+        <Button x:Name="bottone2" Content="cerca titolo" HorizontalAlignment="Left" Height="32" Margin="94,166,0,0" VerticalAlignment="Top" Width="73"/>
+        <TextBox x:Name="TextBoxRicercaAutore" HorizontalAlignment="Left" Height="32" Margin="480,166,0,0" TextWrapping="Wrap" Text="ricerca autire" VerticalAlignment="Top" Width="50"/>
+        <Button x:Name="bottone3" Content="cerca autore" HorizontalAlignment="Left" Height="32" Margin="546,166,0,0" VerticalAlignment="Top" Width="81"/>
+        <ListBox x:Name="ListBox1" HorizontalAlignment="Left" Height="141" Margin="193,166,0,0" VerticalAlignment="Top" Width="256" d:ItemsSource="{d:SampleData ItemCount=5}"/>
     </Grid>
 </Window>

@@ -24,5 +24,10 @@ namespace Verifica_Vincenzi
         {
             InitializeComponent();
         }
+
+        private void bottone1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
