@@ -28,6 +28,28 @@ namespace Verifica_Vincenzi
         private void bottone1_Click(object sender, RoutedEventArgs e)
         {
 
+            Libro libro = new Libro();
+
+            List<string> list = new List<string>();
+
+            string LIBRO;
+            string tempoDiLettura;
+            //string prova = "ciao ciao";
+            //string[] prova2 = new string[3];
+            //prova2 = prova.Split(" ");      // funziona
+            //list.Add("ciao");           // funziona
+            //int i = 0;
+
+            LIBRO = libro.toString(TextBoxAutore.Text, TextBoxTitolo.Text, TextBoxAnno.Text, TextBoxEditore.Text, TextBoxNPag.Text);
+
+            list.Add(LIBRO);
+            int numPag = Convert.ToInt32(TextBoxNPag.Text);
+
+            tempoDiLettura = libro.readTime(numPag);
+
+            txtBoxTempoLettura.Content = tempoDiLettura;
+
+
         }
     }
 }
