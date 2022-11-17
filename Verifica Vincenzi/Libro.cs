@@ -10,7 +10,7 @@ namespace Verifica_Vincenzi
     {
 
 
-        public string toString(string autore, string titolo, string anno, string editore, string numeroPg)
+        public string toString(string autore, string titolo, string anno, string editore, string numeroPg)    // metodo toString
         {
 
             autore += " ";
@@ -24,7 +24,7 @@ namespace Verifica_Vincenzi
         }
 
 
-        public string readTime(int numPag)
+        public string readTime(int numPag)    // metodo readTime
         {
             string durata = "2h";
             if (numPag < 100)
