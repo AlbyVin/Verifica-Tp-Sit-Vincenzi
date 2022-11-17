@@ -28,7 +28,7 @@ namespace Verifica_Vincenzi
         int numeroDeiLibri = 0;
         private void bottone1_Click(object sender, RoutedEventArgs e)
         {
-
+            // commento fatto da github
             Libro libro = new Libro();
 
             Bilbioteca bilbioteca = new Bilbioteca();
