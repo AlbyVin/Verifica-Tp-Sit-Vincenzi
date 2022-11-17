@@ -24,13 +24,16 @@ namespace Verifica_Vincenzi
         {
             InitializeComponent();
         }
-
+        List<string> insiemeDeiLibri = new List<string>();
+        int numeroDeiLibri = 0;
         private void bottone1_Click(object sender, RoutedEventArgs e)
         {
 
             Libro libro = new Libro();
 
-            List<string> list = new List<string>();
+            Bilbioteca bilbioteca = new Bilbioteca();
+
+            
 
             string LIBRO;
             string tempoDiLettura;
@@ -41,12 +44,87 @@ namespace Verifica_Vincenzi
 
             LIBRO = libro.toString(TextBoxAutore.Text, TextBoxTitolo.Text, TextBoxAnno.Text, TextBoxEditore.Text, TextBoxNPag.Text);  //entra nella classe libro
 
-            list.Add(LIBRO);
+            insiemeDeiLibri.Add(LIBRO);
             int numPag = Convert.ToInt32(TextBoxNPag.Text);
 
             tempoDiLettura = libro.readTime(numPag);   // entra nella calsse libro 
 
             txtBoxTempoLettura.Content = tempoDiLettura;
+
+
+
+            numeroDeiLibri++;
+
+
+
+        }
+
+        private void bottone2_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            // bottone cerca titolo
+
+            
+
+            for ( int i = 0; i< numeroDeiLibri; i++)
+            {
+
+                string[] oggettiLista = insiemeDeiLibri[i].Split(" ");
+
+                string a = Convert.ToString(TextBoxCercaTitolo.Text);
+
+                if(a == oggettiLista[1])
+                {
+
+                    titoloLibriTrovati.Content = a;
+
+                }
+
+
+            }
+
+
+
+
+
+        }
+
+        private void bottone3_Click(object sender, RoutedEventArgs e)
+        {
+
+            // bototone cerca autore
+
+
+
+
+            for (int i = 0; i < numeroDeiLibri; i++)
+            {
+
+                string[] oggettiLista = insiemeDeiLibri[i].Split(" ");
+
+                string a = Convert.ToString(TextBoxCercaTitolo.Text);
+
+                if (a == oggettiLista[0])
+                {
+
+                    autoriTrovati.Content = a;
+
+                }
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
 
 
         }

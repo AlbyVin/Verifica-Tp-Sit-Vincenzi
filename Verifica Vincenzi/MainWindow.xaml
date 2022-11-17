@@ -15,10 +15,12 @@
         <TextBox x:Name="TextBoxEditore" HorizontalAlignment="Left" Height="35" Margin="267,60,0,0" TextWrapping="Wrap" Text="editore" VerticalAlignment="Top" Width="63"/>
         <TextBox x:Name="TextBoxNPag" HorizontalAlignment="Left" Height="35" Margin="359,60,0,0" TextWrapping="Wrap" Text="numero pag" VerticalAlignment="Top" Width="57"/>
         <TextBox x:Name="TextBoxCercaTitolo" HorizontalAlignment="Left" Height="32" Margin="10,166,0,0" TextWrapping="Wrap" Text="ricerca titolo" VerticalAlignment="Top" Width="63"/>
-        <Button x:Name="bottone2" Content="cerca titolo" HorizontalAlignment="Left" Height="32" Margin="94,166,0,0" VerticalAlignment="Top" Width="73"/>
+        <Button x:Name="bottone2" Content="cerca titolo" HorizontalAlignment="Left" Height="32" Margin="94,166,0,0" VerticalAlignment="Top" Width="73" Click="bottone2_Click"/>
         <TextBox x:Name="TextBoxRicercaAutore" HorizontalAlignment="Left" Height="32" Margin="480,166,0,0" TextWrapping="Wrap" Text="ricerca autire" VerticalAlignment="Top" Width="50"/>
-        <Button x:Name="bottone3" Content="cerca autore" HorizontalAlignment="Left" Height="32" Margin="546,166,0,0" VerticalAlignment="Top" Width="81"/>
+        <Button x:Name="bottone3" Content="cerca autore" HorizontalAlignment="Left" Height="32" Margin="546,166,0,0" VerticalAlignment="Top" Width="81" Click="bottone3_Click"/>
         <ListBox x:Name="ListBox1" HorizontalAlignment="Left" Height="141" Margin="193,166,0,0" VerticalAlignment="Top" Width="256" d:ItemsSource="{d:SampleData ItemCount=5}"/>
         <Label x:Name="txtBoxTempoLettura" Content="tempo" HorizontalAlignment="Left" Height="30" Margin="631,77,0,0" VerticalAlignment="Top" Width="85"/>
+        <Label x:Name="titoloLibriTrovati" Content="" HorizontalAlignment="Left" Height="33" Margin="26,217,0,0" VerticalAlignment="Top" Width="111"/>
+        <Label x:Name="autoriTrovati" Content="" HorizontalAlignment="Left" Height="46" Margin="490,236,0,0" VerticalAlignment="Top" Width="126"/>
     </Grid>
 </Window>
